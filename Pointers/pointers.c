@@ -38,6 +38,8 @@ void point_function()   {
     printf("%d\n", *ptr3);
     printf("%p\n", z);
 
+// pointer operator for printing addresses is %p
+// The pointer prints in  hexadecimal
 
     
 

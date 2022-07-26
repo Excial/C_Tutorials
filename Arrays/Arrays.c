@@ -1,7 +1,13 @@
 #include <stdio.h>
 
+int mode = 0;
+
+int array_function();
+
 int main()       //dataType arrayName[arraySize]
 {
+    if (mode == 1)  {
+
     int n1 = 5;
     int n2 = 10;
     int n3 = 15;
@@ -26,6 +32,37 @@ int main()       //dataType arrayName[arraySize]
     printf("\n");
     printf("%d" , data[4]);
     printf("\n");
+
+    }
+
+    else {
+
+        array_function();
+
+    }
+
+    return 0;
+
+}
+
+
+int array_function()    {
+
+    int name[100][100];
+
+    for (int i = 0; i < 100; i++)   {
+
+        for (int j = 0; j < 100; j++)    {
+
+             name[i][j] = i;
+             printf("%d\n" , name[i][j]);
+
+
+        }
+
+    }
+
+    ;
 
     return 0;
 
